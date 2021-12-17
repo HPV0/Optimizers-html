@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="styles/all.min.css">
+	<script src="js/jquery-3.6.0.min.js" type="text/javascript"></script>
+	<script src="js/common.js" type="text/javascript"></script>
 </head>
 <body class="body">
 	<header>
@@ -53,10 +55,13 @@
 				<div class="private-chat-left-con col-left-private">
 					<div class="private-chat-sidebar-con flex">
 						<div class="private-chat-sidebar-content-con flex">
-							<div class="sidebar-content-header flex">
+							<div class="sidebar-content-header private-message-search-con flex">
 								<div class="sidebar-content-title">Private message</div>
 								<div class="btn">
 									<i class="fa fa-search"></i>
+								</div>
+								<div class="private-message-search-bar">
+									<input class="private-message-search" placeholder="Search" type="" name="private_message_search">
 								</div>
 							</div>
 							<div class="private-chat-sidebar-content flex">
@@ -122,6 +127,9 @@
 								<div class="sidebar-content-title">Group message</div>
 								<div class="btn">
 									<i class="fa fa-search"></i>
+								</div>
+								<div class="private-groupes-search-bar">
+									<input class="private-groupes-search" placeholder="Search" type="" name="groupes_message_search">
 								</div>
 							</div>
 							<div class="private-groupes-sidebar-content flex">

@@ -88,6 +88,12 @@ input{
     height: 65px;
 }
 
+.input-field:focus{
+	border: 1px solid #000;
+    background: #fff;
+    transition: border 0.3s, background 0.3s;
+}
+
 .two-input-field{
 	justify-content: space-between;
 }
@@ -425,6 +431,7 @@ footer{
 .sidebar-content-header{
 	align-items: center;
 	margin: 10px 0px;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
@@ -525,6 +532,33 @@ footer{
     font-size: 32px;
     color: rgb(3, 3, 3);
 }
+.private-message-search-bar, .private-groupes-search-bar{
+	width: 100%;
+}
+.private-message-search, .private-groupes-search{
+	margin-top: 5px;
+	padding: 5px;
+	width: 100%;
+	border-radius: 3px;
+	height: 40px;
+}
+
+.private-message-search-bar, .private-groupes-search-bar{
+	height: 0px;
+	transition: height 1.55s;
+	overflow: hidden;
+}
+
+.private-message-search-bar.active, .private-groupes-search-bar.active{
+	height: 42px;
+}
+
+
+.btn:hover{
+    opacity: 0.8;
+    transition: opacity 0.8s;
+}
+
 
 @media(min-width: 1470px){
 	.container{
