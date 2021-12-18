@@ -23,13 +23,18 @@
 			</div>
 		</div>
 	</header>
+	<div class="container">
+		<div id="notification-con">
+			
+		</div>
+	</div>
 	<div class="content">
 		<div class="container">
 			<div class="flex reg-title-con">
 				<div class="flex title-with-lines"><span>Register</span></div>
 			</div>
 			<div class="body-input-field">
-				<form method="get">
+				<form id = "reg-form" method="get">
 					<div class="all-input-wrapper flex">
 						<div class="all-input-con">
 							<div class="input-con two-input-field flex">
@@ -53,7 +58,7 @@
 						</div>
 					</div>
 					<div class="reg-submit-con flex">
-						<button class="btn" type="submit" value="Submit">Register Now</button>
+						<span class="btn" >Register Now</span>
 					</div>
 				</form>
 			</div>
@@ -66,5 +71,18 @@
 			</div>
 		</div>
 	</footer>
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+	    $( ".reg-submit-con .btn" ).click(function() {
+		   	$("#reg-form input").each(function( index ) {
+		   		if(!$(this).val() || $(this).is(':checked') == false){
+		   			$("#notification-con").text("Please fill all fields");
+		   			$("#notification-con").addClass("error active");
+		   		}
+			});
+		}); 
+	});
+</script>
 </body>
 </html>

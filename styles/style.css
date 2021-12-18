@@ -559,6 +559,19 @@ footer{
     transition: opacity 0.8s;
 }
 
+#notification-con{
+	width: 100%;
+}
+
+#notification-con.error.active{
+	padding: 20px;
+	background: #ff3333;
+	margin: 20px 0px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 23px;
+}
+
 
 @media(min-width: 1470px){
 	.container{
